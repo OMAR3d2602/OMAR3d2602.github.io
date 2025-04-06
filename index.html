@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio Personal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>¡Hola! Soy [Tu Nombre]</h1>
-        <p>Bienvenido a mi portafolio personal.</p>
+        <div class="hero">
+            <img src="assets/tu-foto.jpg" alt="Foto Personal">
+            <h1>[Tu Nombre]</h1>
+            <p>Resumen profesional: [Breve introducción sobre ti].</p>
+        </div>
     </header>
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Describe quién eres, tus habilidades y experiencias aquí.</p>
-    </section>
-    <section>
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="https://github.com/tuusuario/proyecto1" target="_blank">Proyecto 1</a></li>
-            <li><a href="https://github.com/tuusuario/proyecto2" target="_blank">Proyecto 2</a></li>
-        </ul>
-    </section>
+    
+    <main>
+        <section id="trabajos">
+            <h2>Mejores Muestras de mi Trabajo</h2>
+            <div class="proyectos">
+                <div class="proyecto">
+                    <img src="assets/proyecto1.jpg" alt="Proyecto 1">
+                    <p>Descripción breve del Proyecto 1.</p>
+                </div>
+                <div class="proyecto">
+                    <img src="assets/proyecto2.jpg" alt="Proyecto 2">
+                    <p>Descripción breve del Proyecto 2.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonios">
+            <h2>Testimonios de Clientes</h2>
+            <blockquote>
+                <p>"El trabajo de [Tu Nombre] es excepcional. ¡100% recomendado!"</p>
+                <cite>- Cliente Feliz</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Gran profesional, cumplió con todas mis expectativas."</p>
+                <cite>- Cliente Satisfecho</cite>
+            </blockquote>
+        </section>
+        
+        <section id="contacto">
+            <h2>Información de Contacto</h2>
+            <p>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+            <p>Teléfono: [Tu Número]</p>
+        </section>
+    </main>
+    
     <footer>
-        <p>Contacto: tuemail@ejemplo.com</p>
+        <p>© 2025 [Tu Nombre]. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
