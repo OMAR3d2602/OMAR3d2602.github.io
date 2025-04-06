@@ -3,141 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio Personal">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portafolio personal de [Tu Nombre]">
+    <title>Portafolio de [Tu Nombre]</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
+            color: #333;
         }
         header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px;
         }
         header h1 {
             margin: 0;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-        }
-        .foto {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #fff;
+            font-size: 2.5em;
         }
         .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .perfil {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
         }
-        .card {
-            background-color: #fff;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 45%;
+        .perfil img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border: 5px solid #fff;
         }
-        .card img {
-            max-width: 100%;
-            border-radius: 8px;
+        .perfil .info {
+            max-width: 600px;
         }
-        .card h3 {
-            text-align: center;
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-        .card p {
-            text-align: center;
-            color: #666;
-        }
-        .testimonios {
-            background-color: #e9e9e9;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .testimonios blockquote {
-            font-style: italic;
-            color: #555;
+        .perfil .info h2 {
             margin: 0;
+            font-size: 2em;
         }
-        .contacto {
-            text-align: center;
-            padding: 20px;
+        .perfil .info p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contacto p {
+            font-size: 1.2em;
+            color: #555;
         }
         .contacto a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
+            background-color: #333;
             padding: 10px 20px;
-            border: 2px solid #333;
             border-radius: 5px;
             font-weight: bold;
         }
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #333;
             color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Cabecera -->
     <header>
-        <h1>Mi Portafolio Personal</h1>
+        <h1>Portafolio de [Tu Nombre]</h1>
     </header>
 
-    <section>
-        <div class="container">
-            <div class="card">
-                <img src="mi_foto.jpg" alt="Foto de Perfil" class="foto">
-                <h3>Resumen Profesional</h3>
-                <p>Soy un desarrollador web con experiencia en tecnologías como HTML, CSS, JavaScript y React. Me apasiona crear sitios web funcionales y atractivos que ayuden a las personas a alcanzar sus objetivos.</p>
+    <!-- Contenedor principal -->
+    <div class="container">
+
+        <!-- Sección de perfil (foto y datos personales) -->
+        <section class="perfil">
+            <img src="tu_foto.jpg" alt="Foto de [Tu Nombre]">
+            <div class="info">
+                <h2>[Tu Nombre]</h2>
+                <p>Desarrollador web | Experto en HTML, CSS, JavaScript | Apasionado por la tecnología y la creación de soluciones digitales.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Muestras de Mi Trabajo</h3>
-                <div>
-                    <img src="proyecto1.jpg" alt="Proyecto 1">
-                    <p>Descripción del Proyecto 1</p>
-                </div>
-                <div>
-                    <img src="proyecto2.jpg" alt="Proyecto 2">
-                    <p>Descripción del Proyecto 2</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Sección de resumen profesional -->
+        <section>
+            <h2 class="section-title">Resumen Profesional</h2>
+            <p>Soy un desarrollador web con más de X años de experiencia creando sitios web atractivos y funcionales. Mi enfoque es siempre la usabilidad, la accesibilidad y la optimización para una mejor experiencia de usuario. He trabajado en proyectos que van desde sitios de pequeñas empresas hasta aplicaciones web a gran escala.</p>
+        </section>
 
-    <section>
-        <div class="testimonios">
-            <h3>Testimonios de Clientes</h3>
-            <blockquote>
-                "Fue un placer trabajar con [Tu Nombre]. Su profesionalismo y habilidades superaron nuestras expectativas."
-                <footer>- Cliente 1</footer>
-            </blockquote>
-            <blockquote>
-                "Gracias por tu excelente trabajo en nuestro proyecto. Estaríamos encantados de trabajar contigo nuevamente."
-                <footer>- Cliente 2</footer>
-            </blockquote>
-        </div>
-    </section>
+        <!-- Sección de información de contacto -->
+        <section class="contacto">
+            <h2 class="section-title">Información de Contacto</h2>
+            <p>¡Me encantaría saber de ti! Si estás interesado en colaborar en un proyecto o tienes alguna consulta, no dudes en contactarme.</p>
+            <a href="mailto:tuemail@ejemplo.com">Envíame un correo</a>
+        </section>
 
-    <section class="contacto">
-        <h3>Información de Contacto</h3>
-        <p>Puedes contactarme a través del siguiente enlace:</p>
-        <a href="mailto:tucorreo@ejemplo.com">Envíame un correo</a>
-    </section>
+    </div>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Mi Nombre - Todos los derechos reservados</p>
+        <p>&copy; 2025 [Tu Nombre] - Todos los derechos reservados</p>
     </footer>
 
 </body>
